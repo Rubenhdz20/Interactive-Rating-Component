@@ -2,45 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href=https://img.icons8.com/external-flaticons-lineal-color-flat-icons/2x/external-interactivity-new-media-flaticons-lineal-color-flat-icons-2.png>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
 </head>
 <body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
+  <main>
+    <div class="rate-container">
+      <picture class="rate-star">
+        <img class="star-img" src="./interactive-rating-component-main/images/icon-star.svg" alt="Star">
+      </picture>
+      <h2>How did we do?</h2>
+      <p class="rate-text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <form class="rate-form">
+        <fieldset class="rate-form__fieldset">
+          <legend class="rate-form__title">Please select a rating:</legend>
+          <label class="rate-form__label" for="rating-1">
+            <input type="radio" name="rating" class="rate-form__input">
+            <span class="rate-form__number">1</span>
+          </label>
+          <label class="rate-form__label" for="rating-2">
+            <input type="radio" name="rating" class="rate-form__input">
+            <span class="rate-form__number">2</span>
+          </label>
+          <label class="rate-form__label" for="rating-3">
+            <input type="radio" name="rating" class="rate-form__input">
+            <span class="rate-form__number">3</span>
+          </label>
+          <label class="rate-form__label" for="rating-4">
+            <input type="radio" name="rating" class="rate-form__input">
+            <span class="rate-form__number">4</span>
+          </label>
+          <label class="rate-form__label" for="rating-5">
+            <input type="radio" name="rating" class="rate-form__input">
+            <span class="rate-form__number">5</span>
+          </label>
+        </fieldset>
+      </form>
+      <button id="submit" class="btn-submit-rate">S U B M I T</button>
+    </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="thanks-container">
+      <picture>
+        <img class="thanks-img" src="./interactive-rating-component-main/images/illustration-thank-you.svg" alt="Thank you!">
+      </picture>
+      <button id="submit" class="btn-submit-thanks">You selected 4 out of 5</button>
+      <h1>Thank you!</h1>
+      <p class="thanks-text">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ruben Hernandez Alvarado</a>.
+    </div>
+  </main>
 </body>
 </html>

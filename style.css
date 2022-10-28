@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3rem;
+    font-family: Overpass;
+    background-color: hsl(216, 12%, 8%);
+    flex-direction: column;
+}
+
+/* RATE CONTAINER */
+
+.rate-container {
+    display: grid;
+    padding: 2rem;
+    width: auto;
+    height: 35rem;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 11px;
+}
+
+.star-img {
+    padding: 1rem;
+    background-color:  hsl(212, 13%, 26%);
+    border-radius: 50%;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+}
+
+.rate-text {
+    font-size: 1.4rem;
+    color: hsl(216, 12%, 54%)
+}
+
+.rate-form {
+    width: 100%;
+}
+
+.rate-form__fieldset {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    list-style: none;
+}
+
+.rate-form__title {
+    position: absolute;
+    width: 0.063rem;
+    height: 0.063rem;
+    padding: 0;
+    margin: -0.063rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.rate-form__label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rate-form__input {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    appearance: none;
+    background-color: hsl(212, 13%, 26%);
+    border-radius: 50%;
+    border: none;
+}
+
+.rate-form__number {
+    position: absolute;
+    color: hsl(216, 12%, 54%);
+}
+
+.btn-rating:hover,
+.btn-rating:focus {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.btn-submit-rate {
+    font-size: 1.4rem;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 11px;
+}
+
+/* THANKS CONTAINER */
+
+.thanks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+    padding: 2rem;
+    height: 35rem;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 11px;
+}
+
+.thanks-img {
+    height:  9rem;
+}
+
+.btn-submit-thanks {
+    padding: 1rem;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(212, 13%, 26%);
+    border: none;
+    border-radius: 11px;
+}
+
+.thanks-text {
+    font-size: 1.4rem;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+}
+
+.attribution {
+    color: aliceblue;
+    margin-top: 4rem;
+}
+
+.attribution a {
+    color: cornflowerblue;
+    text-decoration: none;
+}
