@@ -25,7 +25,7 @@ body {
 .rate-container {
     display: grid;
     padding: 2rem;
-    width: auto;
+    width: 30rem;
     height: 35rem;
     background-color: hsl(213, 19%, 18%);
     border-radius: 11px;
@@ -85,16 +85,16 @@ h2 {
     background-color: hsl(212, 13%, 26%);
     border-radius: 50%;
     border: none;
+    transition: all 0.3s;
+}
+
+.rate-form__input:hover {
+    background-color: hsl(25, 97%, 53%);
 }
 
 .rate-form__number {
     position: absolute;
     color: hsl(216, 12%, 54%);
-}
-
-.btn-rating:hover,
-.btn-rating:focus {
-    background-color: hsl(25, 97%, 53%);
 }
 
 .btn-submit-rate {
@@ -103,6 +103,12 @@ h2 {
     background-color: hsl(25, 97%, 53%);
     border: none;
     border-radius: 11px;
+    transition: all 0.3s;
+}
+
+.btn-submit-rate:hover {
+    color: hsl(25, 97%, 53%);;
+    background-color: #fff; 
 }
 
 /* THANKS CONTAINER */
@@ -114,6 +120,7 @@ h2 {
     justify-content: space-around;
     margin-top: 3rem;
     padding: 2rem;
+    width: 30rem;
     height: 35rem;
     background-color: hsl(213, 19%, 18%);
     border-radius: 11px;
@@ -146,3 +153,30 @@ h2 {
     color: cornflowerblue;
     text-decoration: none;
 }
+
+
+@media(min-width: 600px) {  
+    .rate-container {
+      width: 45rem;
+      height: 35rem;
+    }
+
+   .thanks-container {
+      width: 45rem;
+      height: 35rem;
+    }
+
+    .rate-form__input {
+      width: 5rem;
+      height: 5rem;
+    }
+    
+    .rate-form__number {
+        font-size: 1.6rem;
+    }
+
+    .attribution {
+      display: flex;
+      justify-content: center;
+    }
+} 
