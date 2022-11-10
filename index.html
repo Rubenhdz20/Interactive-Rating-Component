@@ -14,59 +14,28 @@
 </head>
 <body>
   <main>
-    <div class="rate-container">
+    <div id="rating-state" class="rate-container">
       <picture class="rate-star">
         <img class="star-img" src="./interactive-rating-component-main/images/icon-star.svg" alt="Star">
       </picture>
       <h2>How did we do?</h2>
       <p class="rate-text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-      <form class="rate-form">
-        <fieldset class="rate-form__fieldset">
-          <legend class="rate-form__title">Please select a rating:</legend>
-
-          <label class="rate-form__label" for="rating-1">
-            <input type="radio" name="rating" class="rate-form__input">
-            <span class="rate-form__number">1</span>
-          </label>
-
-          <label class="rate-form__label" for="rating-2">
-            <input type="radio" name="rating" class="rate-form__input">
-            <span class="rate-form__number">2</span>
-          </label>
-
-          <label class="rate-form__label" for="rating-3">
-            <input type="radio" name="rating" class="rate-form__input">
-            <span class="rate-form__number">3</span>
-          </label>
-
-          <label class="rate-form__label" for="rating-4">
-            <input type="radio" name="rating" class="rate-form__input">
-            <span class="rate-form__number">4</span>
-          </label>
-          
-          <label class="rate-form__label" for="rating-5">
-            <input type="radio" name="rating" class="rate-form__input">
-            <span class="rate-form__number">5</span>
-          </label>
-        </fieldset>
-      </form>
-      <button id="submit" class="btn-submit-rate">S U B M I T</button>
-    </div>
-  
-    <div class="thanks-container">
-      <picture>
-        <img class="thanks-img" src="./interactive-rating-component-main/images/illustration-thank-you.svg" alt="Thank you!">
-      </picture>
-      <button id="submit" class="btn-submit-thanks">You selected 4 out of 5</button>
-      <h1>Thank you!</h1>
-      <p class="thanks-text">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
-    </div>
-  
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Ruben Hernandez Alvarado</a>.
+      <div class="buttons-div">
+        <button class="rate-number" value="1">1</button>
+        <button class="rate-number" value="2">2</button>
+        <button class="rate-number" value="3">3</button>
+        <button class="rate-number" value="4">4</button>
+        <button class="rate-number" value="5">5</button>
+      </div>
+ 
+      <button id="rating-submit" class="btn-submit-rate">S U B M I T</button>
     </div>
   </main>
-  <script href="/script.js"></script>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ruben Hernandez Alvarado</a>.
+  </footer>
+  <script src="/script.js"></script>
 </body>
 </html>
