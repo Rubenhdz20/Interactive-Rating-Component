@@ -1,4 +1,5 @@
 
+
 function getRating() {
     var rateButton = document.getElementsByClassName("rate-number");
     var rate = "";
@@ -27,20 +28,25 @@ function submitRating(rate) {
             <p class="thanks-text">
                 We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
             </p>
-            <button id="rating-reset" type="button" class="btn-reset">Reset</button>
+            <button id="reload" type="button" class="appear" onClick="returnPage()">Reset</button>
         </div>`;
         originalHtmlContainer.innerHTML = thankYouHtmlContainer;
-    });
-} 
+    });  
 
-function reset(rate) {
-    let submitReset = document.querySelector("#rating-reset");
-    submitReset.addEventListener('click', function(event) {
-      return originalHtmlContainer;
-    });
-    console.log(reset());
 }
+
+function returnPage() {
+    let submitReset = document.querySelector("#reload");
+    submitReset.addEventListener('click', function() {
+        location.reload();
+    });
+}
+
+console.log(getRating());
 
 console.log(submitRating());
 
-console.log(getRating());
+console.log(returnPage());
+
+
+

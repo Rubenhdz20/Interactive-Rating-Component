@@ -130,13 +130,28 @@ h2 {
     text-decoration: none;
 }
 
-.btn-reset { 
+.appear {
+    display: block;
     padding: .5rem 11rem;
     font-size: 1.4rem;
     color: white;
     background-color: hsl(25, 97%, 53%);
     border: none;
     border-radius: 11px;
+}
+
+.btn-reset { 
+    display: none;
+    padding: .5rem 11rem;
+    font-size: 1.4rem;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 11px;
+}
+
+.attribution span {
+    margin-left: .3rem;
 }
 
 
