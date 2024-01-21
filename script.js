@@ -1,5 +1,4 @@
 
-
 function getRating() {
     var rateButton = document.getElementsByClassName("rate-number");
     var rate = "";
@@ -47,6 +46,3 @@ console.log(getRating());
 console.log(submitRating());
 
 console.log(returnPage());
-
-
-
