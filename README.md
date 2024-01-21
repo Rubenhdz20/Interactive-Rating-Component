@@ -7,5 +7,3 @@ The challenge was to build out this interactive rate component in which you can 
 ### Continued development
 
 I would like to follow the next challenges to enhanced my understanding in Javascript which I consider a very fun programming language, I have to admit that you only know what you have learned through practice.
-
-## This is the final layout 
