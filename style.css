@@ -78,13 +78,25 @@ h2 {
     color: white;
     background-color: hsl(25, 97%, 53%);
     border: none;
-    border-radius: 11px;
+    border-radius: 35px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .btn-submit-rate:hover {
     color: hsl(25, 97%, 53%);;
     background-color: #fff; 
+}
+
+.btn-reset {
+    width: 15px;
+    height: 15px;
+    font-size: 1.4rem;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 35px;
+    transition: all 0.3s;
 }
 
 /* THANKS CONTAINER */
@@ -132,12 +144,18 @@ h2 {
 
 .appear {
     display: block;
-    padding: .5rem 11rem;
+    padding: 1rem 12rem;
     font-size: 1.4rem;
     color: white;
     background-color: hsl(25, 97%, 53%);
     border: none;
-    border-radius: 11px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.appear:hover {
+    color: hsl(25, 97%, 53%);;
+    background-color: #fff; 
 }
 
 .btn-reset { 
