@@ -3,7 +3,7 @@ function getRating() {
 
     rateButtons.forEach(function(button) {
         button.addEventListener("click", function onClick(event) {
-            var rate = event.target.value;
+            let rate = event.target.value;
             console.log(rate);
             submitRating(rate);
         });
@@ -13,9 +13,9 @@ function getRating() {
 function submitRating(rate) {
     let submitButton = document.querySelector("#rating-submit");
     submitButton.addEventListener('click', function() {
-        var originalHtmlContainer = document.querySelector("#rating-state");
-        var text = `You selected ${rate} out of 5`;
-        var thankYouHtmlContainer = `
+        let originalHtmlContainer = document.querySelector("#rating-state");
+        let text = `You selected ${rate} out of 5`;
+        let thankYouHtmlContainer = `
             <div id="thanks-state" class="thanks-container">
                 <picture>
                     <img class="thanks-img" src="./interactive-rating-component-main/images/illustration-thank-you.svg" alt="Thank you!">
